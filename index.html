@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animasyonlu Yemek Tarifi Sitesi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 class="menu-title">Günün Menüsü</h1>
+
+    <div class="recipe-container">
+        <div class="recipe-card">
+            <h2 class="recipe-title">Ana Yemek: Izgara Somon</h2>
+            <p class="recipe-description">Lezzetli ızgara somon tarifi.</p>
+            <button class="recipe-button" onclick="showRecipe('izgara-somon')">Tarifi Görüntüle</button>
+            
+        </div>
+
+        <div class="recipe-card">
+            <h2 class="recipe-title">Yardımcı Yemek: Patates Püresi</h2>
+            <p class="recipe-description">Pürüzsüz patates püresi tarifi.</p>
+            <button class="recipe-button" onclick="showRecipe('patates-puresi')">Tarifi Görüntüle</button>
+            
+        </div>
+
+        <div class="recipe-card">
+            <h2 class="recipe-title">Çorba: Mercimek Çorbası</h2>
+            <p class="recipe-description">Lezzetli mercimek çorbası tarifi.</p>
+            <button class="recipe-button" onclick="showRecipe('mercimek-corbasi')">Tarifi Görüntüle</button>
+            
+        </div>
+
+        <div class="recipe-card">
+            <h2 class="recipe-title">Salata: Yeşil Salata</h2>
+            <p class="recipe-description">Taze yeşil salata tarifi.</p>
+            <button class="recipe-button" onclick="showRecipe('yesil-salata')">Tarifi Görüntüle</button>
+            
+        </div>
+
+        <div class="recipe-card">
+            <h2 class="recipe-title">Tatlı: Elmalı Turta</h2>
+            <p class="recipe-description">Nefis elmalı turta tarifi.</p>
+            <button class="recipe-button" onclick="showRecipe('elmali-turta')">Tarifi Görüntüle</button>
+            
+        </div>
+    </div>
+
+    <div class="popup-overlay">
+        <div class="popup">
+            <span class="close-button" onclick="hidePopup()">&times;</span>
+            <h2 class="popup-title"></h2>
+            <div class="popup-content"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
